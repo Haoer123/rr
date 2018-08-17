@@ -1,0 +1,13 @@
+<body background="pic/back.jpg">
+	<img src="pic/love.jpg" style="position: absolute;left: 340px;top: 0px">
+	<p id="blink" style="color:deeppink;font-size: 96px;font-family: 华文彩云;font-weight: 800;position: absolute;left: 600px;top: 160px">爱你~</p>
+</body>
+
+<script language="javascript"> 
+function changeColor(){ 
+var color="#f00|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray"; 
+color=color.split("|"); 
+document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)]; 
+} 
+setInterval("changeColor()",200); 
+</script> 
